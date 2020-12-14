@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="css/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>To-do list</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>To-Do List</h1>
+        <!--Name of this day-->
+        <h3 class="body__day">Tuesday</h3>
+
+        <!--Date-->
+        <h3 class="body__date">2020-12-10</h3>
+      </header>
+      <div class="main">
+        <!--Add to-do element-->
+        <div class="body__todo-insert">
+          <input
+            type="text"
+            class="input__todo"
+            placeholder="Take the garbage out"
+          /><button class="button__add">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+
+        <!--Display todo elements-->
+        <p>You have <span class="todo__number">0</span> pending items.</p>
+        <!--Todo list pending-->
+        <div class="todo__list--pending">
+          <!-- <li class="list__item">
+            <input class="checkbox" type="checkbox" />
+            Walk the dog
+            <button class="delete-button">
+              <i class="fa fa-trash-o" aria-hidden="true"></i>
+            </button>
+          </li> -->
+        </div>
+        <div class="completed">
+          Completed tasks: <span class="completed__percentage"></span>%
+        </div>
+        <div class="todo__list--done"></div>
+      </div>
+
+      <!--Footer menu-->
+      <div class="todo__footer">
+        <button class="footer__btn--complete">Show Complete</button>
+        <button class="footer__btn--clear">Clear All</button>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
